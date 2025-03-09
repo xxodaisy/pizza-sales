@@ -1,12 +1,12 @@
 # **Pizza Sales Report**
 
-Analysis of Pizza Sales Report based on my personal project
+📍 Analysis of Pizza Sales Report based on my personal project
 
-## **Background**
+## 📌 Background
 
 I was requested to do a data analysis on one of the Pizza Place Restaurants. The things that I analyzed were the performance of the restaurant in 2015. 
 
-## **Data Collection**
+## 📊 Data Collection
 
 The dataset I got from Kaggle and already in .csv (comma separated value). Also, this dataset already clean (was cleaning by Kaggle)
 
@@ -16,7 +16,7 @@ The dataset consist are:
 3. Pizzas: menu items of Pizza
 4. Pizza types: type of pizza 
 
-## **Exploratory Data Analysis (EDA)**
+## 📈 Exploratory Data Analysis (EDA)
 
 I analyzed this dataset using Python
 
@@ -27,7 +27,7 @@ Here are some things that I analyzed from this task:
 4. How does each pizza size contribute to revenue?
 5. How does revenue contribute to each type of pizza?
 
-### **Data preparation**
+### 🛠️ Data preparation
 The first step I did was to import all the libraryand read the data with pandas DataFrame
 
 ```python
@@ -100,48 +100,54 @@ df_orders = pd.read_csv('orders.csv')
 df_order_details = pd.read_csv('order_details.csv')
 ```
 
-After that, I tried to inspectthe data of each file with n_rows = 10
+After that, I tried to inspect the data of each file with n_rows = 10
 ```python
 #load data pizzas
 df_pizzas = pd.read_csv('pizzas.csv')
 inspect_data(df_pizzas, n_rows=10)
 ```
-![image](https://github.com/user-attachments/assets/f9bae01f-12af-46c0-82a2-901122dbf481)
+![image](https://github.com/user-attachments/assets/4e7c0080-9e6d-47f1-83ca-75da25f7ed42)
+
 
 ```python
 #load data order details
 df_order_details = pd.read_csv('order_details.csv')
 inspect_data(df_order_details, n_rows=10)
 ```
-![image](https://github.com/user-attachments/assets/30f38b15-334a-4b6f-85de-5d206a24538d)
+![image](https://github.com/user-attachments/assets/877fe78a-1efd-4e4a-b8e6-ce74aed6a7f5)
+
 
 ```python
 #load data orders
 df_order_details = pd.read_csv('orders.csv')
 inspect_data(df_orders, n_rows=10)
 ```
-![image](https://github.com/user-attachments/assets/175f5d2a-26bf-4cfd-97f4-b9edaed38e54)
+![image](https://github.com/user-attachments/assets/dc94e132-3e51-49bf-8fec-3234753ad9d2)
+
 
 I checked duplicate for each dataset
 ```python
 #check duplicate pizzas
 df_pizzas[df_pizzas.duplicated()]
 ```
-![image](https://github.com/user-attachments/assets/ddd13373-dc34-4c74-b676-4db9c970c06c)
+![image](https://github.com/user-attachments/assets/dc345661-1117-44d3-a93f-f2bf93ebdcaf)
+
 
 ```python
 #check duplicate orders
 df_orders[df_orders.duplicated()]
 ```
-![image](https://github.com/user-attachments/assets/f7fa4dd4-1eb3-46aa-bc43-e85aefa5d2de)
+![image](https://github.com/user-attachments/assets/afdebe0e-4bc3-4429-b255-8cd08c1fee68)
+
 
 ```python
 #check duplicate order details
 df_order_details[df_order_details.duplicated()]
 ```
-![image](https://github.com/user-attachments/assets/c768e0a9-79dc-460c-a3f1-51fe59bfc1e1)
+![image](https://github.com/user-attachments/assets/20d34cdc-68b9-4899-b4c8-e436ac8f47be)
 
-### **Data Analysis**
+
+### 📊 Data Analysis
 1. How many orders did we get every month? which month has the highest sales?
 
 ```python
@@ -168,7 +174,8 @@ plt.show()
 ringkasan_pesanan_tertinggi = summary.idxmax()
 print("Bulan dengan pesanan tertinggi: ", ringkasan_pesanan_tertinggi)
 ```
-![image](https://github.com/user-attachments/assets/d012409a-1f47-4133-88bd-a509d2a69720)
+![image](https://github.com/user-attachments/assets/3d780d39-87e6-4dd5-966f-01c43182b248)
+
 
 From the data that has been analyzed, the month with the highest order was obtained in July with a total order of around 1900.
 
@@ -197,7 +204,8 @@ plt.title('Orders by Hour')
 
 plt.show()
 ```
-![image](https://github.com/user-attachments/assets/1f147af9-0404-4954-ac00-a925b334bdf9)
+![image](https://github.com/user-attachments/assets/9b7b6bb8-1e5c-40d7-8479-86216ada4642)
+
 
 From the data that has been analyzed, the busiest hours start from 12–13 hours with each order reaching 2500 per day and 17–18 hours with each order reaching 2400 per day.
 
@@ -231,7 +239,7 @@ plt.tight_layout()
 
 plt.show()
 ```
-![image](https://github.com/user-attachments/assets/e6432809-10e6-49c2-9879-b4e20741b12a)
+![image](https://github.com/user-attachments/assets/4e1fa2c7-ac60-4149-9207-f87328f38d46)
 
 From the data that has been analyzed, the type of pizza that customers often order is big_meat_s with a total order of more than 1750.
 
@@ -259,7 +267,8 @@ plt.title ('Revenue Contribution by Pizza Size')
 
 plt.show()
 ```
-![image](https://github.com/user-attachments/assets/9a4013de-d2a2-4579-a3cd-a467f1f404db)
+![image](https://github.com/user-attachments/assets/83ad97d3-c051-4ec0-beb5-0211b7e2d09c)
+
 
 Pizza size L contributes the largest revenue contribution compared to other pizza sizes with a percentage of 45.7%. Followed by pizza size M with a revenue contribution of 30.6% and S of 21.8%. XL and XXL pizza sizes contributed the least revenue, which were 0.1% and 1.7% respectively.
 
@@ -291,6 +300,7 @@ plt.tight_layout()
 
 plt.show()
 ```
-![image](https://github.com/user-attachments/assets/32fc43d6-7631-4dd0-a449-be350c8f070b)
+![image](https://github.com/user-attachments/assets/9b6c8409-8ead-4d37-acfb-ffc427e612de)
+
 
 The type of pizza that contributes the highest revenue contribution is thai_ckn pizza with a revenue contribution of 5%, followed by bbq_ckn and cali_ckn.
