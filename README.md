@@ -27,7 +27,7 @@ Here are some things that I analyzed from this task:
 4. How does each pizza size contribute to revenue?
 5. How does revenue contribute to each type of pizza?
 
-## 🛠️ Data preparation
+## 🛠️ Data Preparation
 The first step I did was to import all the libraryand read the data with pandas DataFrame
 
 ```python
