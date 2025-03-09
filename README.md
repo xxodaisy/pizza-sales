@@ -27,7 +27,7 @@ Here are some things that I analyzed from this task:
 4. How does each pizza size contribute to revenue?
 5. How does revenue contribute to each type of pizza?
 
-### 🛠️ Data preparation
+## 🛠️ Data preparation
 The first step I did was to import all the libraryand read the data with pandas DataFrame
 
 ```python
@@ -147,7 +147,7 @@ df_order_details[df_order_details.duplicated()]
 ![image](https://github.com/user-attachments/assets/20d34cdc-68b9-4899-b4c8-e436ac8f47be)
 
 
-### 📊 Data Analysis
+## 📊 Data Analysis
 1. How many orders did we get every month? which month has the highest sales?
 
 ```python
